@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">BagsFakeWebServer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload">Upload Women Bags</string>
+    <string name="generate_keys">Women Bags Keys</string>
+    <string name="upload_categories">Upload Categories</string>
 </resources>
