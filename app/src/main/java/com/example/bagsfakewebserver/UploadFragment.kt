@@ -41,9 +41,21 @@ class UploadFragment : Fragment() {
             }
         }
         binding.btnUploadCategories.setOnClickListener {
-            listOfCategories.forEach{
+            listOfCategories.forEach {
                 categoriesReference.child(it.category_id).setValue(it)
             }
+        }
+        binding.btnDelete.setOnClickListener {
+
+            try {
+
+                database.child("favorites").child("1Ro5oh34TwZYQQ6cRZYHonmsgHk1")
+                    .child("-MkDLsEbLB3-c64vzCO5").setValue(null)
+                Log.d(TAG, "button CLicked")
+            }catch (e:Exception){
+                Log.d(TAG, "button CLicked : exception : ${e.message}")
+            }
+
         }
         // Inflate the layout for this fragment
         return binding.root
